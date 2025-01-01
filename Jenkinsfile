@@ -24,13 +24,13 @@ pipeline {
                 SONAR_TOKEN = credentials('sonarQub-token') // Replace with your Jenkins credential ID
             }
             steps {
-                bat """
+                bat '''
                 mvn clean verify sonar:sonar \
   -Dsonar.projectKey=MAVEN-Assignment \
   -Dsonar.projectName='MAVEN-Assignment' \
   -Dsonar.host.url=http://localhost:9000 \
   -Dsonar.token=$(SONAR_TOKEN)
-                """
+                '''
             }
         }
     }
