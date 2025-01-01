@@ -29,7 +29,7 @@ pipeline {
   -Dsonar.projectKey=MAVEN-Assignment \
   -Dsonar.projectName='MAVEN-Assignment' \
   -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.token=sqp_78814554371694a0f53ab5e39fa8f05cfe192a8d
+  -Dsonar.token=$(SONAR_TOKEN)
                 """
             }
         }
