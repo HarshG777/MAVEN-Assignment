@@ -11,7 +11,7 @@ public class LoginAutomationTest {
     @Test
     public void testLogin() {
         // Set up the WebDriver for Windows (path to ChromeDriver executable)
-        System.setProperty("webdriver.chrome.driver", "https://developer.chrome.com/docs/chromedriver/downloads#chromedriver_1120561549");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
